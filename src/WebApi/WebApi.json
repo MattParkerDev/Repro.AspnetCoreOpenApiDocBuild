@@ -5,12 +5,32 @@
     "version": "1.0.0"
   },
   "paths": {
-    "/MyEndpoint1": {
+    "/MyClassLibEndpoint1": {
       "get": {
         "tags": [
           "Api"
         ],
-        "operationId": "MyEndpoint",
+        "operationId": "MyClassLibEndpoint",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MyDirectEndpoint1": {
+      "get": {
+        "tags": [
+          "Api"
+        ],
+        "operationId": "MyDirectEndpoint",
         "responses": {
           "200": {
             "description": "OK",

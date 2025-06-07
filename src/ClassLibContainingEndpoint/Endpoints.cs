@@ -8,6 +8,6 @@ public static class Endpoints
 	public static void MapEndpoints(this RouteGroupBuilder builder)
 	{
 		// increment the number and notice that the generated openapi document does not change without a rebuild
-		builder.MapGet("MyEndpoint1", () => "Hello, World!").WithName("MyEndpoint");
+		builder.MapGet("MyClassLibEndpoint1", () => "Hello, World!").WithName("MyClassLibEndpoint");
 	}
 }
